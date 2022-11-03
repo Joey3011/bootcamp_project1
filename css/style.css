@@ -713,7 +713,6 @@ footer a {
     color: var(--switchBGforSlider);
     display: inline-block;
     font-size: 16px;
-    font-weight: bold;
     margin-left: 0;
   }
   nav .navbar .logo-name a,
