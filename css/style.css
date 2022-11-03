@@ -633,7 +633,7 @@ footer a {
     font-size: 25px;
   }
 }
-@media (min-width: 0) and (max-width: 870px) {
+@media (min-width: 0) and (max-width: 877px) {
   nav {
     overflow: hidden;
     z-index: 10;
