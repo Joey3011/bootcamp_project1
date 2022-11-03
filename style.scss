@@ -711,7 +711,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
 //map and video
 @include respond-between(xs, xxxl){
   .video-content{
-    margin-top: -1px;
+    margin-top: 2px;
   }
 
   iframe{

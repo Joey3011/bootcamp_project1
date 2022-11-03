@@ -593,7 +593,7 @@ footer a {
 */
 @media (min-width: 0) and (max-width: 2399px) {
   .video-content {
-    margin-top: -1px;
+    margin-top: 2px;
   }
   iframe {
     height: 70vh;
