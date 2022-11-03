@@ -309,7 +309,7 @@ nav .navbar{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 nav .navbar .logo-name a,
@@ -364,6 +364,7 @@ nav .navbar .links li .sub-menu{
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   display: none;
+  padding-bottom: 4px;
   z-index: 2;
 }
 
@@ -372,7 +373,7 @@ nav .navbar .links li:hover .tea-sub-menu{
   display: block;
 }
 
-.navbar .links li .sub-menu li{
+.links li .sub-menu li{
   padding: 0 5px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -386,13 +387,14 @@ nav .navbar .links li:hover .tea-sub-menu{
   font-size: 16px;
   text-align: center;
   display: inline-block;
+  padding-right: 15px;
 }
 
-nav .navbar .links li a:before {
+.links li a:before {
   content: "";
   position: absolute;
   background: var(--switchBGforSlider);
-  bottom: 10px;
+  bottom: 8px;
   left: 0;
   width: 0;
   height: 1%;
@@ -402,11 +404,11 @@ nav .navbar .links li a:before {
   transition: all 0.5s ease-out;
 }
 
-nav .navbar .links li a:after {
+.links li a:after {
   content: "";
   position: absolute;
   background: var(--switchBGforSlider);
-  bottom: 10px;
+  bottom: 8px;
   left: 0;
   width: 0;
   height: 1%;
@@ -415,12 +417,13 @@ nav .navbar .links li a:after {
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-nav .navbar .links li a:hover:before {
+
+.links li a:hover:before {
   left: -10px;
   color: var(--hoverColor);
 }
-nav .navbar .links li a:hover:after {
-  left: 0;
+
+.links li a:hover:after {
   width: 100%;
   color: var(--switchBGforSlider);
 }
@@ -913,7 +916,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
       content: "";
       position: absolute;
       background: var(--switchBGforSlider);
-      bottom: 10px;
+      bottom: 0;
       left: 0;
       width: 0;
       height: 1%;
@@ -927,7 +930,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
       content: "";
       position: absolute;
       background: var(--switchBGforSlider);
-      bottom: 10px;
+      bottom: 0;
       left: 0;
       width: 0;
       height: 1%;
@@ -937,12 +940,12 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
       transition: all 0.7s ease-out;
     }
     nav .navbar .links li a:hover:before {
-      left: -10px;
+      width: 10px;
+      left: 0;
       color: var(--hoverColor);
     }
     nav .navbar .links li a:hover:after {
-      left: 0;
-      width: 30%;
+      width: 50%;
       color: var(--switchBGforSlider);
     }
 }
