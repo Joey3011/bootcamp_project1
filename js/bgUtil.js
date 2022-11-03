@@ -1,5 +1,5 @@
 // Select The Elements
-var toggle_btn, big_wrapper, navbar, navLinks, menuOpenBtn, menuCloseBtn, teaArrow, exploreArrow, openCart, closeCart, openUser, closeUser, cart, box, account;
+let toggle_btn, big_wrapper, navbar, navLinks, menuOpenBtn, menuCloseBtn, teaArrow, exploreArrow, openCart, closeCart, openUser, closeUser, cart, box, account;
 
 varDeclared = () => {
   box = document.querySelector(".nav-box");
