@@ -54,7 +54,7 @@ checkStatus = () => {
 toggleAnimation();
 }
 
-function events() { 
+events = () => { 
   //toggle button events
   toggle_btn.addEventListener("click", () => {
     //call function chack status
