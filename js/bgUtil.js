@@ -1,7 +1,7 @@
 // Select The Elements
 var toggle_btn, big_wrapper, navbar, navLinks, menuOpenBtn, menuCloseBtn, teaArrow, exploreArrow, openCart, closeCart, openUser, closeUser, cart, box, account;
 
-declare = () => {
+varDeclared = () => {
   box = document.querySelector(".nav-box");
   account = document.querySelector(".account");
   cart = document.querySelector(".cart");
@@ -21,56 +21,47 @@ declare = () => {
 
 const main = document.querySelector("main");
 //get var declared
-declare();
+varDeclared();
 
-//dunction toggle button dark to light 
+//function toggle button dark to light 
 toggleAnimation = () => {
-  // Clone the wrapper
 let clone = bg_wrapper.cloneNode(true);
 
-// get whatever value save in local storage
+// get value save in local storage
   if (localStorage.getItem("dark")==='true') {
-    //if true tanggalin si class light then replace it with dark class
     clone.classList.remove("light");
     clone.classList.add("dark");
   } else {
-    // if value in local storage is false tanggalin si class dark then replace it with light class 
     clone.classList.remove("dark");
     clone.classList.add("light");
   }
-  //add class copy to bgwrapper and append it to main element
-clone.classList.add("copy");
 main.appendChild(clone);
-
-document.body.classList.remove("stop-scrolling");
 bg_wrapper.remove();
-clone.classList.remove("copy");
+
 // Reset Variables
-declare();
+varDeclared();
 events();
 }
 
+//check and change status value save in local storage
 checkStatus = () => {
-  //Check if there is a toggle button value save in local storage. 
   if(localStorage.getItem("dark")==='true'){
-    //if true then set it to false
     localStorage.setItem("dark", 'false');
   }else{
-    //else set it to true
     localStorage.setItem("dark", 'true');
 }
-
+//call function 
 toggleAnimation();
-
 }
 
 function events() { 
   //toggle button events
   toggle_btn.addEventListener("click", () => {
-    //if clicked call check status function
+    //call function chack status
     checkStatus();
   });
-// sidebar Cart
+
+  // sidebar Cart
   openCart.onclick = () => {
     cart.style.right = "0";
   }
@@ -78,7 +69,7 @@ function events() {
   closeCart.onclick = () => {
     cart.style.right = "-100%";
   }
-// sidebar account
+  // sidebar account
   openUser.onclick = () => {
     account.style.right = "0";
   }
@@ -86,7 +77,7 @@ function events() {
   closeUser.onclick = () => {
     account.style.right = "-100%";
   }
-// sidebar
+  // sidebar
   menuOpenBtn.onclick = () => {
     navLinks.style.left = "0";
   }
@@ -117,9 +108,12 @@ window.onscroll = () => {
     }
 };
 
+
+//keep bg color of all page even page is refresh/reload to another page
 window.addEventListener("load", () => {
-  //window events to keep either dark or light  
   toggleAnimation();
 });
+
+//call function events
 events();
 
