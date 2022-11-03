@@ -102,7 +102,6 @@ video {
 
 .searchBar .btn {
   background: var(--switchBGforSlider);
-  margin-right: 1.6rem;
 }
 
 /* toggle button for dark mode */
