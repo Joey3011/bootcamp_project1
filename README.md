@@ -1,1 +1,1 @@
- # KODEGO Bootcamp html, bootstrap, SaSS/ CSS3 and javascript front-end mini-project
+ # KODEGO Bootcamp front-end mini-project: developed using html, bootstrap, SaSS/CSS3 and javascript 
