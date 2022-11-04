@@ -120,20 +120,20 @@ video {
   color: var(--switchBGforSlider);
   cursor: pointer;
   outline: none;
-  height: 39px;
-  width: 39px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   padding: 1px;
   transition: 1s;
-  bottom: 3.5rem;
-  right: 0.7rem;
+  bottom: 3.7rem;
+  right: 1rem;
   z-index: 10;
 }
 
 .anchorUp i {
-  line-height: 39px;
+  line-height: 30px;
   border: 1px solid var(--backgroundColor);
   border-radius: 50%;
 }
