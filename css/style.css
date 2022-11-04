@@ -85,8 +85,14 @@ video {
   transition: 0.3s;
 }
 
+.workshop .btn,
+.wholesale .btn,
+.cater .btn,
+.career .btn,
+.formRegister .btn,
 .searchBar .btn {
   background: var(--switchBGforSlider);
+  color: var(--backgroundColor);
 }
 
 /* toggle button for dark mode */
@@ -136,8 +142,17 @@ video {
   line-height: 39px;
 }
 
+.workshop .btn:hover,
+.wholesale .btn:hover,
+.cater .btn:hover,
+.career .btn:hover,
+.anchorUp i:hover,
+.formRegister .btn:hover,
+.searchBar .btn:hover,
 .toggle-btn:hover {
-  background: var(--mainColor);
+  color: var(--hoverColor);
+  background-color: var(--switchBGforSlider);
+  transform: scale(1.09);
 }
 
 .bg-wrapper.light .toggle-btn i:last-child {
