@@ -60,7 +60,7 @@ input:focus {
 
 video {
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   object-fit: fill;
   position: absolute;
   top: 0;
@@ -69,7 +69,7 @@ video {
 
 .video-content {
   position: relative;
-  height: 87.5vh;
+  height: 92.5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
