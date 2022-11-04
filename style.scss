@@ -89,8 +89,7 @@ video {
   transition: 0.3s;
 }
 
-//position search bar at first layer
-
+.tab .tablinks,
 .workshop .btn,
 .wholesale .btn,
 .cater .btn,
@@ -149,7 +148,7 @@ video {
   line-height: 39px;
 }
 
-
+.tab .tablinks:hover,
 .workshop .btn:hover,
 .wholesale .btn:hover,
 .cater .btn:hover,
