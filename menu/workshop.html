@@ -345,7 +345,7 @@
                                     <p>
                                         Email: jeff@email.com
                                     </p>
-                                    <a class="text-decoration-none" href="location.html">Send Email</a>
+                                    <a class="text-decoration-none" href="mailto: abc@example.com">Send Email</a>
                                 </figcaption>
                             </figure>
                         </div>
@@ -416,7 +416,7 @@
                             <h3>
                                 Subscribe for Newsletter
                             </h3>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 mt-4">
                                 <form class="d-flex form" >
                                     <input class="form-control form-control-sm" type="email" placeholder="Enter Email" aria-label="Subscribe for newsletter">
                                     <button class="btn btn-outline-warning btn-sm" type="submit">Submit</button>
@@ -440,24 +440,10 @@
       </main>
       <!-- Script -->
     <script>
-        function workShop(evt, classes) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(classes).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        document.getElementById("defaultOpen").click();
         //validation
-        validation = () => {
-            document.querySelector(".account").style.right = "0";
-        }
+    validation = () => {
+        document.querySelector(".account").style.right = "0";
+    }
    </script>
   <script src="../js/bgUtil.js"></script> 
   <script src="https://kit.fontawesome.com/09761598c8.js" crossorigin="anonymous"></script> 
