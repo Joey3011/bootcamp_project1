@@ -89,12 +89,14 @@ video {
   transition: 0.3s;
 }
 
+.btnLogin .btn,
+.formRegister .btn,
 .tab .tablinks,
 .workshop .btn,
 .wholesale .btn,
 .cater .btn,
 .career .btn,
-.formRegister .btn,
+.contact .btn,
 .searchBar .btn{
   background: var(--switchBGforSlider);
   color: var(--backgroundColor);
@@ -148,13 +150,19 @@ video {
   line-height: 39px;
 }
 
+.btnLogin .btn:hover,
+.formRegister .btn:hover{
+  color: var(--hoverColor);
+  background-color: var(--switchBGforSlider);
+}
+
 .tab .tablinks:hover,
 .workshop .btn:hover,
 .wholesale .btn:hover,
 .cater .btn:hover,
 .career .btn:hover,
 .anchorUp i:hover,
-.formRegister .btn:hover,
+.contact .btn:hover,
 .searchBar .btn:hover,
 .toggle-btn:hover {
   color: var(--hoverColor);
