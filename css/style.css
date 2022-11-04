@@ -122,14 +122,12 @@ video {
   padding: 1px solid var(--backgroundColor);
   transition: 1s;
   bottom: 3.5rem;
-  right: 0.5rem;
+  right: 0.6rem;
   z-index: 10;
 }
 
 .anchorUp i {
   line-height: 39px;
-  background-color: var(--backgroundColor);
-  border-radius: 50%;
 }
 
 .toggle-btn i {

@@ -17,6 +17,7 @@ varDeclared = () => {
   closeCart = document.querySelector(".cart .slide-cart")
   openUser = document.querySelector(".nav-box .fa-user-circle-o");
   closeUser = document.querySelector(".account .slide-account")
+  document.querySelector('.fa-arrow-circle-o-up').style.visibility  = "hidden";
 }
 
 const main = document.querySelector("main");
