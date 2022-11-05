@@ -13,6 +13,7 @@
   --backgroundColor: #bea895;
   --switchBGforSlider: #f1f1f1;
   --paraColor: #000;
+  --switch: #f1f1f1;
 }
 
 /* Light mode */
@@ -22,6 +23,7 @@
   --backgroundColor: #f1f1f1;
   --switchBGforSlider: #bea895;
   --paraColor: #000;
+  --switch: #000;
 }
 
 .bg-wrapper {
@@ -106,8 +108,8 @@ video {
   position: fixed;
   display: inline-block;
   border: none;
-  background-color: var(--paraColor);
-  color: var(--backgroundColor);
+  background-color: var(--switchBGforSlider);
+  color: var(--paraColor);
   outline: none;
   cursor: pointer;
   height: 39px;
@@ -116,8 +118,8 @@ video {
   font-size: 1.8rem;
   font-weight: bold;
   transition: 0.8s;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 2rem;
   z-index: 10;
 }
 
@@ -132,8 +134,8 @@ video {
   font-weight: bold;
   padding: 1px;
   transition: 1s;
-  bottom: 3.7rem;
-  right: 1rem;
+  bottom: 4.1rem;
+  right: 2.5rem;
   z-index: 10;
 }
 
