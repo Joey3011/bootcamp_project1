@@ -118,8 +118,8 @@ video {
   font-size: 1.8rem;
   font-weight: bold;
   transition: 0.8s;
-  bottom: 1rem;
-  right: 2rem;
+  bottom: 1.5rem;
+  right: 1rem;
   z-index: 10;
 }
 
@@ -134,8 +134,8 @@ video {
   font-weight: bold;
   padding: 1px;
   transition: 1s;
-  bottom: 4.1rem;
-  right: 2.5rem;
+  bottom: 4.6rem;
+  right: 1.5rem;
   z-index: 10;
 }
 
