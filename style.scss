@@ -13,8 +13,9 @@
 .dark {
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
-  --backgroundColor: #8F6251;
+  --backgroundColor: #bea895;
   --switchBGforSlider: #f1f1f1;
+  --paraColor: #000;
 }
 
 /* Light mode */
@@ -23,7 +24,8 @@
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #f1f1f1;
-  --switchBGforSlider: #8F6251;
+  --switchBGforSlider: #bea895;
+  --paraColor: #000;
 }
 
 .bg-wrapper {
@@ -34,7 +36,7 @@
   min-height: 100vh;
   padding: 1.7rem 0 2rem;
   background-color: var(--backgroundColor);
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
   overflow: hidden;
 }
 
@@ -100,7 +102,7 @@ video {
 .contact .btn,
 .searchBar .btn{
   background: var(--switchBGforSlider);
-  color: var(--backgroundColor);
+  color: var(--paraColor);
 }
 
  /* toggle button for dark mode */
@@ -109,7 +111,7 @@ video {
   position: fixed;
   display: inline-block;
   border: none;
-  background-color: var(--switchBGforSlider);
+  background-color: var(--paraColor);
   color: var(--backgroundColor);
   outline: none;
   cursor: pointer;
@@ -126,7 +128,6 @@ video {
 
 .anchorUp {
   position: fixed;
-  color: var(--switchBGforSlider);
   cursor: pointer;
   outline: none;
   height: 30px;
@@ -143,7 +144,9 @@ video {
 
 .anchorUp i{
   line-height: 30px;
-  border: 1px solid var(--backgroundColor);
+  border: 1px solid var(--paraColor);
+  background-color: var(--paraColor);
+  color: var(--backgroundColor);
   border-radius: 50%;
 }
 
@@ -153,8 +156,7 @@ video {
 
 .btnLogin .btn:hover,
 .formRegister .btn:hover{
-  color: var(--hoverColor);
-  background-color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 .tab .tablinks:hover,
@@ -166,9 +168,7 @@ video {
 .contact .btn:hover,
 .searchBar .btn:hover,
 .toggle-btn:hover {
-  color: var(--hoverColor);
-  background-color: var(--switchBGforSlider);
-  transform: scale(1.09);
+  color: var(--backgroundColor);
 }
   
 .bg-wrapper.light .toggle-btn i:last-child {
@@ -188,7 +188,7 @@ video {
 }
 
 .navbar-toggler span i{
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 .guide{
@@ -291,24 +291,24 @@ video {
 .listLinks a{
   font-size: 0.9rem;
   cursor: pointer;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 .listLink a{
   font-size: 1rem;
   cursor: pointer;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 /*wnd of side link */
 /* Section */
 
 section li{
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 //about
 h1, h2, h3, h4, h5, p{
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 /*  Navigation */
@@ -333,12 +333,12 @@ nav .navbar{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0 16px;
+  padding: 0 18px;
 }
 
 nav .navbar .logo-name a,
 nav .navbar .logo a{
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
   font-size: 1.5rem;
   line-height: 1rem;
   margin: 2px 0;
@@ -374,7 +374,7 @@ nav .navbar .links li .arrow{
   line-height: 90px;
   text-align: center;
   display: inline-block;
-  color: var(--paragraphColor);
+  color: var(--paraColor);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -406,7 +406,7 @@ nav .navbar .links li:hover .tea-sub-menu{
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
   display: inline-block;
   font-size: 16px;
   text-align: center;
@@ -417,7 +417,7 @@ nav .navbar .links li:hover .tea-sub-menu{
 .links li a:before {
   content: "";
   position: absolute;
-  background: var(--switchBGforSlider);
+  background: var(--paraColor);
   bottom: 8px;
   left: 0;
   width: 0;
@@ -431,7 +431,7 @@ nav .navbar .links li:hover .tea-sub-menu{
 .links li a:after {
   content: "";
   position: absolute;
-  background: var(--switchBGforSlider);
+  background: var(--paraColor);
   bottom: 8px;
   left: 0;
   width: 0;
@@ -449,14 +449,14 @@ nav .navbar .links li:hover .tea-sub-menu{
 
 .links li a:hover:after {
   width: 100%;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 nav .navbar .links li a{
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
   display: inline-block;
   font-size: 16px;
   padding: 0 5px;
@@ -477,7 +477,7 @@ nav .navbar .logo img{
   justify-content: center;
   max-width: 60px;
   margin-right: 5px;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 nav .navbar .nav-box .cart{
@@ -517,7 +517,7 @@ nav .navbar .nav-box .sidebar-logo img{
 
 .nav-box i{
   cursor: pointer;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 .cart-body{
@@ -530,7 +530,7 @@ nav .navbar .nav-box .sidebar-logo img{
 //slider
 a,
 .nav-box .cart-body p{
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
   font-size: 14px;
   text-decoration: none;
 }
@@ -547,7 +547,7 @@ a:hover{
   display: block;
   font-weight: bold;
   cursor: pointer;
-  color: var(--switchBGforSlider);
+  color: var(--paraColor);
 }
 
 .navbar .nav-links .sidebar-logo{
@@ -565,7 +565,7 @@ hr.style {
   width: 100%;
   border: 0;
   height: 3px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--switchBGforSlider), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--paraColor), rgba(0, 0, 0, 0));
 }
 
 footer .brand img{
@@ -581,7 +581,7 @@ footer{
     width: 100%;
     max-width: 2400px;
     background-color: var(--backgroundColor);
-    color: var(--switchBGforSlider);
+    color: var(--paraColor);
 }
 
 footer h4{
@@ -590,48 +590,47 @@ footer h4{
 
 footer p{
     font-size: 15px;
-    color: var(--switchBGforSlider);
+    color: var(--paraColor);
     font-weight: bold;
  }
 
  footer .btn:hover{
-  color: var(--hoverColor);
+  color: var(--backgroundColor);
   background-color: var(--switchBGforSlider);
-  transform: scale(1.1);
  }
 
 footer .btn{
   margin: 2px 5px;
-  background-color: var(--switchBGforSlider);
-  color: var(--backgroundColor);
+  background: var(--switchBGforSlider);
+  color: var(--paraColor);
  }
 
 footer .fa{
     font-size: 30px;
-    color: var(--switchBGforSlider);
+    color: var(--paraColor);
     margin: 0 5px;
  }
 
 footer i{
     width: 42px;
     height: 42px;
-    color: var(--switchBGforSlider);
+    color: var(--paraColor);
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid var(--switchBGforSlider);
+    border: 1px solid var(--paraColor);
     text-align: center;
     padding: 6px;
  }
 
  footer a{
-  color: var(--switchForeColor);
+  color: var(--paraColor);
  }
 
 $breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  userDefine: 878px,
+  userDefine: 880px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
@@ -851,14 +850,14 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
       display: block;
       font-weight: bold;
       cursor: pointer;
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
     }
 
     nav .navbar .links li a{
       height: 100%;
       text-decoration: none;
       white-space: nowrap;
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
       display: inline-block;
       font-size: 16px;
       margin-left: 0;
@@ -866,7 +865,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
 
     nav .navbar .logo-name a,
     nav .navbar .logo a{
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
       font-size: 1.2rem;
       line-height: 1.2;
       font-weight: bold;
@@ -909,13 +908,13 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
     }
 
     nav .navbar .links li .sub-menu li a{
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
       font-size: 16px;
     }
 
     nav .navbar .links li .sub-menu li{
       border-bottom: none;
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
     }
 
     .links li:hover .tea-arrow,
@@ -941,7 +940,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
     nav .navbar .links li a:before {
       content: "";
       position: absolute;
-      background: var(--switchBGforSlider);
+      background: var(--paraColor);
       bottom: 0;
       left: 0;
       width: 0;
@@ -955,7 +954,7 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
     nav .navbar .links li a:after {
       content: "";
       position: absolute;
-      background: var(--switchBGforSlider);
+      background: var(--paraColor);
       bottom: 0;
       left: 0;
       width: 0;
@@ -972,6 +971,6 @@ $breakpoint: map-get($breakpoints, xxl); // Get the extra extra large breakpoint
     }
     nav .navbar .links li a:hover:after {
       width: 50%;
-      color: var(--switchBGforSlider);
+      color: var(--paraColor);
     }
 }
