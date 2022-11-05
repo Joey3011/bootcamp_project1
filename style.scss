@@ -27,7 +27,8 @@
 }
 
 .bg-wrapper {
-  font-family: 'Cooper Black', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -516,6 +517,7 @@ nav .navbar .nav-box .sidebar-logo img{
 
 .nav-box i{
   cursor: pointer;
+  padding: 0 5px;
 }
 
 .cart-body{
@@ -536,6 +538,7 @@ a,
 a:hover{
   color: var(--hoverColor);
 }
+
 // end slider
 
 .account .fa-close,
