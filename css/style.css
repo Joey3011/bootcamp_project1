@@ -11,14 +11,14 @@
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #8F6251;
-  --switchBGforSlider: #e8e4c9;
+  --switchBGforSlider: #f1f1f1;
 }
 
 /* Light mode */
 .light {
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
-  --backgroundColor: #e8e4c9;
+  --backgroundColor: #f1f1f1;
   --switchBGforSlider: #8F6251;
 }
 
