@@ -104,8 +104,18 @@ video {
 }
 
 /* toggle button for dark mode */
-.toggle-btn {
+.toggleHolder {
   position: fixed;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.toggle-btn {
+  position: relative;
   display: inline-block;
   border: none;
   background-color: var(--switchBGforSlider);
@@ -118,9 +128,6 @@ video {
   font-size: 1.8rem;
   font-weight: bold;
   transition: 0.8s;
-  bottom: 1.5rem;
-  right: 1rem;
-  z-index: 10;
 }
 
 .anchorUp {
@@ -145,6 +152,7 @@ video {
   background-color: var(--paraColor);
   color: var(--backgroundColor);
   border-radius: 50%;
+  z-index: 10;
 }
 
 .toggle-btn i {

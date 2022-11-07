@@ -42,6 +42,7 @@ bg_wrapper.remove();
 // Reset Variables
 varDeclared();
 events();
+
 }
 
 //check and change status value save in local storage
@@ -56,6 +57,15 @@ toggleAnimation();
 }
 
 events = () => { 
+  window.onscroll = () => {
+    if(scrollY >= 500){
+        document.querySelector('.fa-arrow-circle-o-up').style.visibility = "visible";
+        document.getElementById('anchorUp').classList.add('anchorUp');
+      }else{
+        document.querySelector('.fa-arrow-circle-o-up').style.visibility  = "hidden";
+        document.getElementById('anchorUp').classList.remove('anchorUp');
+      }
+  };
   //toggle button events
   toggle_btn.addEventListener("click", () => {
     //call function chack status
@@ -97,17 +107,7 @@ events = () => {
   }
 }
 
-window.onscroll = () => {
-    if(scrollY >= 500)
-    {
-       document.querySelector('.fa-arrow-circle-o-up').style.visibility = "visible";
-       document.getElementById('anchorUp').classList.add('anchorUp');
-    }else
-    {
-      document.querySelector('.fa-arrow-circle-o-up').style.visibility  = "hidden";
-      document.getElementById('anchorUp').classList.remove('anchorUp');
-    }
-};
+
 
 
 //keep bg color of all page even page is refresh/reload to another page
